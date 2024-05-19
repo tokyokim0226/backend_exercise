@@ -13,3 +13,11 @@ However, while Python's implicit type conversion works when using the + operator
 **Loop**
 
 continue vs pass - pass will still make the rest of the loop AFTER the pass run before the next iteration. continue will stop that iteration right there and move onto the next iteration immediately.
+
+#### Procedural Programming
+- writing step by step instructions 
+- stepping stone to object oriented programming
+- DRY - Don't repeat yourself
+- Create functions that can be reused
+
+#### Functional Programming
