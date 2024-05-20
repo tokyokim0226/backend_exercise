@@ -21,3 +21,5 @@ continue vs pass - pass will still make the rest of the loop AFTER the pass run 
 - Create functions that can be reused
 
 #### Functional Programming
+- Is a programming paradigm that utilizes functions for clean, consistent, and maintainable code
+- does not change the data outside the scope of the function
