@@ -1,19 +1,21 @@
-menu = {
-    1: {"name": 'espresso',
-        "price": 1.99},
-    2: {"name": 'coffee', 
-        "price": 2.50},
-    3: {"name": 'cake', 
-        "price": 2.79},
-    4: {"name": 'soup', 
-        "price": 4.50},
-    5: {"name": 'sandwich',
-        "price": 4.99}
-}
+data = [2,3,5,7,11,13,17,19,23,29,31]
 
-total = 0
-for item in menu:
-    total += menu[item]['price']
-    print(menu[item]['price'])
+# Ex1: List comprehension: updating the same list
+data = [x+3 for x in data]
+print("Updating the list: ", data)
 
-print(total)
+# Ex2: List comprehension: creating a different list with updated values
+new_data = [x*2 for x in data]
+print("Creating new list: ", new_data)
+
+# Ex3: With an if-condition: Multiples of four:
+fourx = [x for x in new_data if x%4 == 0 ]
+print("Divisible by four", fourx)
+
+# Ex4: Alternatively, we can update the list with the if condition as well
+fourxsub = [x-1 for x in new_data if x%4 == 0 ]
+print("Divisible by four minus one: ", fourxsub)
+
+# Ex5: Using range function:
+nines = [x for x in range(100) if x%9 == 0]
+print("Nines: ", nines)

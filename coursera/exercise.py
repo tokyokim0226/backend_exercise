@@ -1,27 +1,28 @@
-# Using explicit type conversion, change the following 
-# inputs so the types match with the following below
-#  
-# name = type string
-# age = type int
-# height = type float
-# loyalty = type boolean
+class A:
+    def __init__(self, c):
+        print("---------Inside class A----------")
+        self.c = c
+    print("Print inside A.")
 
-# Modify the line below
-name = input('What is your name? ')
+    def alpha(self):
+        c = self.c + 1
+        return c
 
-print(f"Type of name variable is: {type(name)}. It should be <class 'str'>")
+print(dir(A))
+print("Instantiating A..")
+a = A(1)
+print(a.alpha())
 
-# Modify the line below
-age = input('What is your age? ')
+class B:
+    def __init__(self, a):
+        print("---------Inside class B----------")
+        self.a = a
 
-print(f"Type of age variable is: {type(age)}. It should be <class 'int'>")
+    print(a.alpha())
+    d = 5
+    print(d)
+    print(a)
 
-# Modify the line below
-height = input('What is your height in meters? ')
-
-print(f"Type of height variable is: {type(height)}. It should be <class 'float'>")
-
-# Modify the line below
-loyalty = input('Are you part of our loyalty program? ')
-
-print(f"Type of loyalty variable is: {type(loyalty)}. It should be <class 'bool'>")
+print("Instantiating B..")
+b = B(a)
+print(a)

@@ -1,8 +1,12 @@
-# Lab Instructions: Type Casting Input
+# Lab Instructions: Mapping key-values to Dictionary data structures 
 
-In this lab you will be presented with three exercises to demonstrate how explicit type casting can be.  
-used to solve data being inputted from an end user. Each exercise will ask you to solve a particular problem relating to types.
- <br><br>
+So far you have learned that Python has different techniques to modify a given iterator sequence such as list or dictionary using comprehensions,  
+map() function and so on. Now you will be utilising what you have learned. Let’s say you have a list of employee data for the Little Lemon company.  
+You want to create login accounts for the employees and you will create usernames for these employees in the first example. 
+
+You also want to update the roster for these employees on the calendar and want easy access to their initials and employee IDs, as they are all unique.  
+To get that, in the second example, you will create a dictionary with the required information. 
+<br><br>
 
 > ### **Tips: Before you Begin**
 > #### **To view your code and instructions side-by-side**, select the following in your VSCode toolbar:
@@ -21,45 +25,33 @@ used to solve data being inputted from an end user. Each exercise will ask you t
     (Select "Run Python File in Terminal" in the provided button dropdown)
 > - Alternatively, you can follow lab instructions which use python3 commands to run your code in terminal.
 > 
+ <br><br> 
 
-<br>
+## Exercise Instructions
 
-## There are two exercises and objectives of this activity: 
-- **Exercise 1:** Use explicit casting to apply the correct cast type
+1. Open the `comprehensions.py` file
 
-- **Exercise 2:** Fix the script so it correctly outputs the bill total <br><br>
+2. Implement the `to_mod_list()` function by using the `map()` function to apply `mod()`
+   to all elements within `employee_list`.  
+    Assign the result of it to a new variable called `map_emp`. Convert `map_emp` to a list and return it. 
+   - The `mod()` function returns a string value for example such as `“Lisa_Cold Storage”` from the dictionary passed to it. <br><br>
 
-## Exercise 1:
-In this exercise, you'll use explicit casting to apply the correct cast type.
+3. At this point you should have a list of the values such as: `“Lisa_Cold Storage”` mentioned above.  
+But that is no good for a username with the whitespace present in it.  
+    - Implement the `generate_usernames()` method by using list comprehension and the `replace()` over `mod_list`  
+  to replace all spaces `(" ")` with underscores `("_")`. 
+    - Return the resulting list. <br><br>
 
-### Instructions
+4. We want to create a dictionary that stores employees' first initials and IDs. 
+    - Implement `map_id_to_initial()` by using dictionary 
+comprehension over the `employee_list` to create a dictionary   
+where each key is the 
+first letter of an employee's name and the value is the employee's ID.<br><br>
 
-1. Open the script exercise1.py present inside the project folder
-
-
-2. To run the script, open terminal and execute the following command:
+5. Run the script by opening the terminal and executing the command:
     ```
-    python3 exercise1.py
+    python3 comprehensions.py
     ```
-3. Step 3: Fix the script so the variables have the correct type.
-
-
-## Exercise 2:
-
-Your goal of this exercise is to fix the script so that each variable has the correct type.
-
-### Instructions
-
-1. Open the script exercise2.py present inside the project folder
-
-2. To run the script, open terminal and execute the following command.  You will be prompted to enter some values.
-
-
-    ```
-    python3 exercise2.py 
-    ```
-
-3. Fix the script so it outputs the correct bill total based on the data being entered.
 
 <br>
 
