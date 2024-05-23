@@ -77,3 +77,5 @@ d = {key:value for (key,value) in zip(number, months)}
 
 #### Method Resolution Order (MRO)
 - Determines the order in which a given method or attribute passed is searched 
+- To build MROs, DFS was used before --> now moved to **C3 Linearization Algorithm**
+- .mro() or help() to check the MRO
