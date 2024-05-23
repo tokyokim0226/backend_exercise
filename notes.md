@@ -68,3 +68,12 @@ d = {key:value for (key,value) in zip(number, months)}
 - class definition, create new inst ance, initialize new instance
 - Statements inside a class body get executed regardless of the instance creation. 
 - A **decorator** is a function that takes another function as an input/as its argument and gives a new function as its output
+- Sometimes class inheritence can get complicated --> then how to tell the relationships?
+  - **Simple Inheritance** - one parent, one child class
+  - **Multiple Inheritance** - more than one parent
+  - **Multi-level Inheritance** - more than one chain of parents
+  - **Hierarchical Inheritance** - several subclasses inherit from a common parent
+  - **Hybrid Inheritance** - Mix of all the other inheritances
+
+#### Method Resolution Order (MRO)
+- Determines the order in which a given method or attribute passed is searched 
