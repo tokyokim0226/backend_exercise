@@ -79,3 +79,25 @@ d = {key:value for (key,value) in zip(number, months)}
 - Determines the order in which a given method or attribute passed is searched 
 - To build MROs, DFS was used before --> now moved to **C3 Linearization Algorithm**
 - .mro() or help() to check the MRO
+
+#### Modules
+- Modules are like instructions to make a pie
+- Building blocks for adding functionality to your code
+- Reusability is the biggest functionality
+- defined by their usage
+- Python has a library of standard modules called built in modules -> these modules do not need to be installed separately
+- **Alias** - excellent way of importing different modules
+  - assign an alias using 
+  ```python
+  import (module) as (alias) 
+  from (module) import (function/variable) as (alias)
+  ```
+
+
+  **Scope Resolution**
+  - LEGB - Local, Enclosed, Global, Built-in 
+
+
+**reload() function**
+- previously, import was only stated once at the beginning
+- 
