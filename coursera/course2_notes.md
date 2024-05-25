@@ -100,4 +100,29 @@ d = {key:value for (key,value) in zip(number, months)}
 
 **reload() function**
 - previously, import was only stated once at the beginning
-- 
+- reload() can reload the imported module once again
+
+**Modules, packages, and libraries**
+- Modules are similar to files
+- Packages are like directories that contain different files
+- Modules are generally written in a single file (general practice)
+- module that contains the \_\_path\_\_ definition is a package
+- Library is a term that is used interchangably with packages, but in general practice, it referse to a collection of packages
+- Package names as well as command line or terminal are case sensitive
+- Packages/libraries - one time installation, will be present as part oof Python interpreter until you choose to uninstall them
+
+#### Testing
+**White-box testing** - the tester has knowledge of the code design and functionalities
+**Black box testing** - no idea 
+
+**Functional tests** - based on the business requirements stated - determine if features and functionalities are in line with the expectations
+**Non-functional tests** - more complex, involve metrics such as overall performance and quality of product
+**Maintenance tests** - occur when the system and its operational environment is corrected, changed, or extended 
+
+**4 Main levels of Testing**
+- Unit/component testing
+  - test specific individual components by isolation
+- Integration testing
+  - 
+- Sytem testing
+- Acceptance testing
