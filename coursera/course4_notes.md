@@ -61,7 +61,15 @@ SQL consists of several subsets, each designed for different types of database o
    1. CREATE, ALTER, DROP, TRUNCATE, RENAME
 2. **Data Manipulation Language** - Manages data within the database
    1. SELECT, INSERT, UPDATE, DELETE
-3. **Data Control Language** - Controls access to the data
+3. **Data Query Language** - Primarily focused on querying and retrieving data from databases
+   1. SELECT!!
+4. **Data Control Language** - Controls access to the data
    1. GRANT, REVOKE
-4. **Transaction Control Language** - Manages transactions to ensure data integrity
+5. **Transaction Control Language** - Manages transactions to ensure data integrity
       1. COMMIT, ROLLBACK, SAVEPOINT, RELEASE SAVEPOINT, SET TRANSACTION
+
+##### SQL Advantages
+- **User-friendly** - requires very little coding skills
+- **Standard Langauge** - compatible with all available relational databases
+  - can run on any computer 
+- **Portable Language** - can be used on any hardware running on any operating system
