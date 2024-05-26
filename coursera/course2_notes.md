@@ -126,3 +126,16 @@ d = {key:value for (key,value) in zip(number, months)}
   - 
 - Sytem testing
 - Acceptance testing
+
+##### Pytest
+
+- Syntax
+```python
+python -m pytest (name_of_testfile) 
+```
+Pytest is a testing framework for Pythoon that simplifies the process of writing and running tests for your code. 
+Used at the unit-testing level, it provides an easy-to-use syntax for writing test cases -> widely used due to its simplicity, flexibility, and powerful features
+
+**TDD**
+- Software development is time-sensitive -> in the process, developers often find the testing to be squeezed into the time remaining at the end, after the code is written
+- **TDD** is an alternative coding practice in which the tests are written first and the code is written after so that the tests will pass
