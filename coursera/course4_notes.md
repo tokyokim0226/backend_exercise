@@ -73,3 +73,63 @@ SQL consists of several subsets, each designed for different types of database o
 - **Standard Langauge** - compatible with all available relational databases
   - can run on any computer 
 - **Portable Language** - can be used on any hardware running on any operating system
+
+**SQL Syntax**
+```SQL
+-- 1. Create a Database and tables using the DDL subset of SQL (Data Definition Language)
+
+--create a database
+CREATE DATABASE college;
+--once data base created, create a table
+CREATE TABLE table_name;
+
+--delete a database or table inside the database using DROP
+DROP TABLE table_name;
+
+-- Change the structure of the tables in the database using ALTER
+--adding column to table
+ALTER TABLE table_name ADD (column_name datatype(size));
+--Adding primary key to a table
+ALTER TABLE table_name ADD primary key (column_name);
+
+--remove all records from table but keep table
+TRUNCATE TABLE table_name;
+
+-- 2. Utilize the DML subset of SQL to populate and modify data in a database (Data Manipulation Language)
+
+-- Add data to a table
+INSERT INTO table_name (column1, column2, column3 ...) VALUES (val1, val2, val3);
+
+--Update data in a table
+UPDATE Student ;
+SET date_of_birth = '2000-10-12' WHERE ID = 02;
+
+--Delete data from a table
+DELETE FROM Student WHERE ID = 03;
+
+-- 3. Read and query data within databases using the DQL subset of SQL (Data Query Language)
+
+--Select/Query data within a table
+SELECT first_name, last_name FROM Student WHERE ID = '01';
+```
+
+- The **Data Type** of a column defines what type of value a table column can hold
+  - tells SQL what data type to expect in each column
+  - Strings, Numeric, Date and Time, Binary are common data types that are supported on all database systems 
+- A column in the table that has unique values will become the **primary key** of the table (ex. ID)
+  - **Composite primary key** is when the primary key is comprised of more than one column/field (when you need to use two different columns/fields to uniquely identify any tuple/row/item)
+  - Any attribute that contains a unique value in each row of the table are all considered **Candidate Key Attributes**
+  - A candidate key not selected as the primary key is called an **Alternate key**
+
+##### Integrity Constraints
+1. Key constraints
+2. Domain constraints
+3. Referential integrity constraints - when a table is related to another table via a foreign key column, then the referenced column value must exist in the other table
+
+##### Database Structure
+Database structure refers to how data is arranged in a database. Within a database, related data are grouped into tables, each of which consists rows (tuples) and columns, like in a spreadsheet
+![Basic structural elements of a database table](image.png)
+
+**Logical database structure**
+- The logical structure of a database is represented using a diagram known as the Entity Relationship Diagram (ERD)
+- Visual representation of how the database will be implemented into tables during physical database design, using a DBMS like MySQL or Oracle
