@@ -134,5 +134,3 @@ Database structure refers to how data is arranged in a database. Within a databa
 - The logical structure of a database is represented using a diagram known as the Entity Relationship Diagram (ERD)
 - Visual representation of how the database will be implemented into tables during physical database design, using a DBMS like MySQL or Oracle
 
-
-- 
