@@ -158,3 +158,29 @@ SELECT * FROM students_table WHERE faculty LIKE '_c%'
 
 
 - **IN** - specify multiple possible values for a column
+
+
+```sql
+SELECT DISTINCT country from tabe_name
+--select distinct entries only, does not select duplicates
+
+```
+Important points to remember about SELECT DISTINCT:
+- When only one column or expression is provided in the DISTINCT clause, the query will return the unique values for that column. 
+
+- When more than one column or expression is provided in the DISTINCT clause, the query will retrieve unique combinations for those columns. 
+
+- The DISTINCT clause doesn't ignore NULL values in DISTINCT column(s). NULL values are considered as unique values by DISTINCT. 
+
+
+#### Database Schema
+- **Schema** - Blueprint of what your data looks like
+- Organization of information and its relationships
+- Schema and database are interchangable terms in SQL
+
+Building a database schema is the first step in database design. It is essential especially when you are dealing with relational databases because you want a solid structure for your database before you can move forward. A database schema is like a blueprint of how data in a database will look and be stored.
+
+**Schema objects** - a schema consists of what's known as schema objects. Schema objects could be things like tables, columns, and relationships. It can also be things like Data types, views, stored precudures, primary keys, and foreign keys.
+
+- **Logical Schema** - defines the organization, structure, and relationships of the data stored in the database at a logical level, independent of the physical storage details.
+- **Physical Schema** - defines how the data is stored physically on the storage media and how it is accessed by the database management system (DBMS)
