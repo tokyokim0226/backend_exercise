@@ -134,10 +134,27 @@ Database structure refers to how data is arranged in a database. Within a databa
 - The logical structure of a database is represented using a diagram known as the Entity Relationship Diagram (ERD)
 - Visual representation of how the database will be implemented into tables during physical database design, using a DBMS like MySQL or Oracle
 
-#### Databases
-
+##### Databases
+- **Datatypes** - Numeric, String, char, varchar, int, decimal, tinyint, 
 - tinytext - maximum 100 char
 - text - maximum ~60000 char
 - **Database constraints** - limit the type of data that can be stored in a table
   - **NOT NULL**
   - **Default**
+
+
+##### SQL Operators (Extra)
+
+- **BETWEEN** - filteres records within a numeric or time and date range
+- **LIKE** - specify a pattern within the search criteria
+  - '%' - wild card character that represents 0 or multiple characters
+  - '_' - represents one single character
+  
+```sql
+SELECT * FROM students_table WHERE faculty LIKE '_c%'
+-- This selects rows from student_table where the name of the faculty has a second letter 'c' (% sign omitted will result in only 'Sc' being searched but not "Science')
+-- if the '%' sign is omitted, it will match only exact values
+```
+
+
+- **IN** - specify multiple possible values for a column
