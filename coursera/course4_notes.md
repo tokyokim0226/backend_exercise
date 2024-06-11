@@ -184,3 +184,39 @@ Building a database schema is the first step in database design. It is essential
 
 - **Logical Schema** - defines the organization, structure, and relationships of the data stored in the database at a logical level, independent of the physical storage details.
 - **Physical Schema** - defines how the data is stored physically on the storage media and how it is accessed by the database management system (DBMS)
+
+#### Relational Model
+**What is the relational model?**
+The relational model is built around three main concepts:
+- Data,
+- Relationships,
+- and constraints
+It describes a database as "a collection of inter-related relations (or tables)". In essence, it is a way of organizing or storing data in a database
+
+**Relation** - a relation represents a file that stores data. It's also known as a *table*
+- Row = record = tuple
+- column = field = attribute
+- **Domain** - a set of acceptable values that a column is allowed to contain - depends on the data type of the column
+- **Degree** - the number of columns or attribtues within a relation
+- **Cardinality** - how many records there are within a particular table in a database
+  - ex) 100 students in your student table - cardinality = 100
+- constraints - **key constraints, domain constraints, referential integrity constraints**
+
+**Important note when choosing a primary key out of candidate keys**
+- need to choose a candidate key with a value taht cannot change. simply being unique is not enough,
+- ex) a ID that is unique to a customer doesn't change, whereas their email address / phone number are unique, but are prone to change. therefore this makes the ID attribute a better candidate to become a primary key out of all possible candidate keys.
+- **Attributes**
+  - **Simple attribute** - cannot be simplified any further
+    -ex) grade - A --> A is as simple as it can get 
+  - **Composite attribute** - can be split further
+    - ex) name - Jack Ray --> can be split to first and last name
+  - **single valued attribute** --> can only store one value
+    - ex) date of birth
+  - **Multi-valued attribute** --> store multiple values per field
+    - ex) email --> one student can have multiple email addresses
+    - however, this practice should be avoided in a relational database
+      - ex) for emails, have a primary email and secondary email attribute rather than bunch them into one
+  - **Derived attribute** --> when one attribute is derived from another
+    - ex) age --> 21 (can be derived from D.O.B, if it exists in the table)
+  - **Key attribute** --> Field that holds a unique value used to identify a unique entity record
+
