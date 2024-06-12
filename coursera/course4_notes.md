@@ -220,3 +220,22 @@ It describes a database as "a collection of inter-related relations (or tables)"
     - ex) age --> 21 (can be derived from D.O.B, if it exists in the table)
   - **Key attribute** --> Field that holds a unique value used to identify a unique entity record
 
+**Entity Relationship Diagram (ER-D)**
+- helps proovide the big picture of your database
+- ensures the data requriements and operations are well defined and documented in your project
+
+**Database Normalization**
+- A process used in relational database design to minimize redundancy and dependency by organizing fields and tables of a database
+- unnomrmalized form --> repeating groups of data can appear in many cases, and there can also be multiple instances of data stroed in the same cell,
+- **First Normal Form (1NF)**
+  - ensures that each column contain atomic (indivisible) values
+  - each entry in a column is of the same data type
+  - each column must contain unique values
+- **Second Normal Form (2NF)**
+  - you must avoid partial dependency relationships between data
+- **Third Normal Form (3NF)**
+  - No **transitive dependencies** - which means that any non-key attribute in the table may not be functionally dependent oon anotehr non-keyu attribute in the same table
+- The third normal form is typically good enough to deal with the three anomaly challenges - insertion, update and deletion anomalies
+  - **Insertion Anomlay** - occurs when you cannot add data to the database due to the absence of other data
+  - **Update Anomaly** - occurs when changes to data are not consistently reflected throughout the database, leading to data inconsistency
+  - **Deletion Anomaly** - occurs when deleting data inadvertently removes additional valuable data
