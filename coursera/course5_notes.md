@@ -44,3 +44,28 @@ In Django, when a user navigates to a URL, the URL is routed to something called
 Later, you need to map the view function to a URL
 - The URL you will use in your Django project are stored as a URL configuration in a file called urls.py - url config
   - acts like a mapping chart that Django uses to determine which view functions are associated with a specific URL 
+
+**Views**
+In Django, a view is a function designed to handle a web request and return a web response such as an HTML document
+
+**HTTP methods**
+- GET - retrieve information from teh given server
+- POST - send data to the server
+- PUT - updates what currently exists on the web server 
+- DELETE - removes the resource
+
+- **Headers** - contain additional information about the request and the client that is making the request
+
+**HTTP Status Codes**
+ Five groups of status codes - grouped by the first digit of the error number
+- Informational - 100-199
+  - 100 CONTINUE
+- Successful - 200-299
+  - 200 OK
+- Redirection - 300-399
+  - 301 MOVED PERMANANTLY
+  - 302 FOUND (temporary redirection)
+- Client error - 400-499
+  - 404 NOT FOUND
+- Server Error - 500-599 
+  - Internal Error
