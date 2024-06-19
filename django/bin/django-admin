@@ -1,4 +1,4 @@
-#!/Users/tylerk0226/Desktop/coding/backend_exercise/django/bin/python
+#!/Users/tylerk0226/Desktop/coding/backend_exercise/django/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
