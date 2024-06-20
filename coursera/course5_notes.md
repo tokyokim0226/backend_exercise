@@ -69,3 +69,4 @@ In Django, a view is a function designed to handle a web request and return a we
   - 404 NOT FOUND
 - Server Error - 500-599 
   - Internal Error
+
