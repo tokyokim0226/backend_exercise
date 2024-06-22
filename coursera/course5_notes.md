@@ -70,3 +70,39 @@ In Django, a view is a function designed to handle a web request and return a we
 - Server Error - 500-599 
   - Internal Error
 
+**What is a view in Python**
+A view function, or *view* for short, is a Python function that takes a web request and returns a web response.
+This response can be the HTML contents of a web page, or a redirect, or a 404 error, or an XML document, or an image... or anything. The view itself contains whatever arbitrary logic is necessary to return that response. 
+
+For the sake of putting the code somewhere, the convention is to put views in a file called views.py, placed in your project or application directory.
+
+#### Function Based Views vs Class Based Views
+**Function-Based Views (FBVs)**
+
+- Definition: FBVs are defined as regular Python functions. Each function takes at least one parameter, typically named request, and returns an HttpResponse object.
+- Simplicity: FBVs are straightforward and simple to understand. They are ideal for small, simple views.
+- Flexibility: Since they are just functions, FBVs provide flexibility to include any kind of logic directly in the view.
+
+```python
+#example of a function-based view
+from django.http import HttpResponse
+
+def my_view(request):
+    return HttpResponse('Hello, World!')
+```
+
+**Class-Based Views (CBVs)**
+- Definition: CBVs are defined as classes. They use inheritance to share common functionality across different views, making code reuse easier.
+- Structure: CBVs promote a more organized structure, especially useful for complex views with a lot of shared or reusable code.
+- Built-in Views: Django provides many built-in CBVs like TemplateView, ListView, DetailView, CreateView, UpdateView, and DeleteView which handle common tasks and CRUD operations efficiently.
+- Method-based Handlers: CBVs use methods to handle different HTTP methods (GET, POST, etc.), which can lead to cleaner and more maintainable code.
+
+```python
+#example of a class-based view
+from django.http import HttpResponse
+from django.views import View
+
+class MyView(View):
+    def get(self, request):
+        return HttpResponse('Hello, World!')
+```
