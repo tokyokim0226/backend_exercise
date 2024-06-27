@@ -109,3 +109,4 @@ class MyView(View):
     def get(self, request):
         return HttpResponse('Hello, World!')
 ```
+
