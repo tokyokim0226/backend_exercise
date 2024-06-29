@@ -99,6 +99,7 @@ def my_view(request):
 - Built-in Views: Django provides many built-in CBVs like TemplateView, ListView, DetailView, CreateView, UpdateView, and DeleteView which handle common tasks and CRUD operations efficiently.
 - Method-based Handlers: CBVs use methods to handle different HTTP methods (GET, POST, etc.), which can lead to cleaner and more maintainable code.
 
+
 ```python
 #example of a class-based view
 from django.http import HttpResponse
